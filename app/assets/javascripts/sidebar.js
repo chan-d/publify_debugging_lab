@@ -11,7 +11,7 @@ var bind_sortable = function() {
         url: '/admin/sidebar/sortable',
         statusCode: {
           200: function(data, textStatus, jqXHR) {
-            $('#sidebar-config').replaceWith(data.html);
+            $('#sidebar_config').replaceWith(data.html);
             bind_sortable();
           },
           500: function(jqXHR, textStatus, errorThrown) {
